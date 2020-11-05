@@ -1,23 +1,19 @@
 import React from "react";
+import PupCard from "../PupCard.js"
 
-function Blog() {
-  return (
-    <div>
-      <h1>Blog Page</h1>
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula. Curabitur pellentesque
-        turpis sit amet eros iaculis, a mollis arcu dictum. Ut vel ante eget massa ornare placerat.
-        Etiam nisl orci, finibus sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum
-        nunc, sed pretium risus rutrum eget. Nam consequat, ligula in faucibus vestibulum, nisi
-        justo laoreet risus, luctus luctus mi lacus sit amet libero. Class aptent taciti sociosqu ad
-        litora torquent per conubia nostra, per inceptos himenaeos. Mauris pretium condimentum
-        tellus eget lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec
-        placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum in velit pellentesque
-        vehicula sit amet at augue. Maecenas aliquam bibendum congue. Pellentesque semper, lectus
-        non ullamcorper iaculis, est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
-    </div>
-  );
+class Discover extends React.Component {
+  render() {
+    return (
+      <div className="text-center row justify-content-center">
+        <div className="col-sm-12 col-md-6 col-lg-4">
+          <h1>Make New Friends</h1>
+          <p>Thumbs up on any pup you'd like to meet!</p>
+          <PupCard />
+          <p>Friends made so far: 0</p>
+        </div>
+      </div>
+    )
+  }
 }
 
-export default Blog;
+export default Discover;
