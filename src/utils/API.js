@@ -1,11 +1,11 @@
 import axios from "axios";
 
-const BASEURL = "https://dog.ceo/api/breeds/";
+const BASEURL = "https://dog.ceo/api/breed";
 
 // Export an object with a "search" method that searches the Giphy API for the passed query
 export default {
   search: function(query) {
-    return axios.get(BASEURL + query + "/images");
+    return axios.get(BASEURL +"/"+ query + "/images");
   },
 
   getBreeds: function() {
@@ -13,6 +13,6 @@ export default {
   },
 
   random: function() {
-    return axios.get(BASEURL+"image/random");
+    return axios.get(BASEURL+"s/image/random");
   }
 };
