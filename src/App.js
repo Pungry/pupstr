@@ -12,11 +12,12 @@ function App() {
     <Router>
       <div>
         <NavTabs />
+        <div className="header-spacer"></div>
         <Route exact path="/" component={Home} />
         <Route exact path="/search" component={Search} />
         <Route exact path="/discover" component={Discover} />
-      </div>
         <Footer />
+      </div>
     </Router>
   );
 }
