@@ -5,6 +5,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: lightgray;
+}
+
+#navbar {
+  background-color:rgb(79, 114, 13);
+}
+
+.nav-link {
+  color: lightgray !important;
 }
 
 code {
