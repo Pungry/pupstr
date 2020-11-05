@@ -25,14 +25,19 @@ footer {
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-image: url(https://www.thelabradorsite.com/wp-content/uploads/2017/05/When-can-puppies-go-outside-LS-long.jpg);
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(20px + 2vmin);
   color: white;
+}
+.container{
+  margin-top: 10px; 
+  
+  
 }
 
 .App-link {
