@@ -17,7 +17,7 @@ function NavTabs() {
       <li className="nav-item">
         <Link
           to="/discover"
-          className={location.pathname === "/about" ? "nav-link active" : "nav-link"}
+          className={location.pathname === "/discover" ? "nav-link active" : "nav-link"}
         >
           Discover
         </Link>
