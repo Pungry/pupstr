@@ -62,3 +62,11 @@ footer {
 .header-spacer {
   height: 2.5rem;
 }
+
+.loading {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 70%;
+  height: 70%;
+}

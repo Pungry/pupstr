@@ -24,19 +24,28 @@ class PupCard extends React.Component {
     this.getRandomDog();
   }
 
-  getRandomDog() {
-    // let x = Math.floor(Math.random()*19+5)*100;
-    // this.setState({image: `http://placekitten.com/${x}/${x}` });
+  getRandomDog = () => {
+    this.startLoading();
     API.random().then(res=>{
         console.log(res.data.message);
-        this.setState({image: res.data.message})
+        this.setState({image: res.data.message, loading: <></>})
     })
-}
+  }
+
+  startLoading = () => {
+    this.setState({
+      image: "https://via.placeholder.com/500.png?text=Loading...",
+      loading: (
+        <div className="spinner-border loading"></div>
+      )
+    })
+  }
 
   render() {
     return (
       <div className="card">
         <img className="img-thumbnail" src={this.state.image} alt="Possible new friend" />
+        {this.state.loading}
         <button className="btn btn-danger dislike-btn" onClick={this.handleDislike}>
             <i className="fas fa-thumbs-down"></i>
         </button>
