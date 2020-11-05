@@ -38,10 +38,14 @@ class Search extends Component {
   // When the form is submitted, search the Giphy API for `this.state.search`
   handleFormSubmit = event => {
     event.preventDefault();
-    
-    API.search(this.state.search)
+
+    if(this.state.breeds.includes(this.state.search)){
+      API.search(this.state.search)
       .then(res => this.setState({ results: res.data.message }))
       .catch(err => console.log(err));
+    } else {
+      this.setState({results: []});
+    }
   };
 
   render() {
