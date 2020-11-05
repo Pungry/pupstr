@@ -9,6 +9,7 @@ class PupCard extends React.Component {
         this.getRandomDog();
     }
   handleLike = ()=>{
+      this.props.clearMessage();
     let match = (Math.random()<0.2);
     if(match){
         console.log("It was a match!");
@@ -18,6 +19,7 @@ class PupCard extends React.Component {
   }
 
   handleDislike = ()=>{
+    this.props.clearMessage();
     this.getRandomDog();
   }
 
