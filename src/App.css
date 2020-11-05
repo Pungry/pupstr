@@ -26,6 +26,8 @@ footer {
 
 .App-header {
   background-image: url(https://www.thelabradorsite.com/wp-content/uploads/2017/05/When-can-puppies-go-outside-LS-long.jpg);
+  background-size: cover;
+  background-position: center;
   min-height: 50vh;
   display: flex;
   flex-direction: column;
@@ -59,4 +61,12 @@ footer {
 
 .header-spacer {
   height: 2.5rem;
+}
+
+.loading {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 70%;
+  height: 70%;
 }
