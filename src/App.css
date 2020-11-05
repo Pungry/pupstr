@@ -2,6 +2,17 @@
   text-align: center;
 }
 
+footer {
+  background: rgb(79, 114, 13);
+  color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  min-height: 10vh;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
