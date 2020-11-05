@@ -1,4 +1,5 @@
 import React from "react";
+import API from "../utils/API"
 
 class PupCard extends React.Component {
     constructor(props){
@@ -24,9 +25,13 @@ class PupCard extends React.Component {
   }
 
   getRandomDog() {
-    let x = Math.floor(Math.random()*19+5)*100;
-    this.setState({image: `http://placekitten.com/${x}/${x}` });
-  }
+    // let x = Math.floor(Math.random()*19+5)*100;
+    // this.setState({image: `http://placekitten.com/${x}/${x}` });
+    API.random().then(res=>{
+        console.log(res.data.message);
+        this.setState({image: res.data.message})
+    })
+}
 
   render() {
     return (
