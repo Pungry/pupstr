@@ -52,3 +52,11 @@ footer {
     transform: rotate(360deg);
   }
 }
+
+.footer-spacer {
+  height: 6rem;
+}
+
+.header-spacer {
+  height: 2.5rem;
+}
